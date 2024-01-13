@@ -23,25 +23,18 @@ console.log(`---- Console ----\n`);
 
 async function runGMCommand(inp) {
   try {
-    console.log(`[GM_Send] Sending command...`);
+    console.log(`[GM_Send] Sending command: ${inp}`);
     const netURL = `http://${IP}:${Port}/api?region=dev_docker&ticket=GM&cmd=1116&uid=${UID}&msg=${inp}`;
     const response = await axios.get(netURL);
 
     if (response.data.msg) {
-      console.log(`[GM_Response] ${response.data.msg}`);
+      console.log(`[GM_Response] ${response.data.data.retmsg} || ${response.data.msg}\n`);
     }
   } catch (error) {
-    console.error(`[GM_Error] ${error.message}`);
+    console.error(`[GM_Error] ${error.message}\n`);
   }
 }
 
 process.stdin.on("data", (data) => {
-  const input = data.toString().trim();
-  const args = input.split(" ");
-
-  if (args[0] === "gm") {
-    const command = args[0];
-    const cmd = args[1];
-    runGMCommand(cmd);
-  }
+  runGMCommand(data);
 });

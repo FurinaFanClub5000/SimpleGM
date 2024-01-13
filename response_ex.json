@@ -1,0 +1,9 @@
+{
+    "data": {
+        "msg": "give 201 200",
+        "retmsg": "can't find gm command:GIVE"
+    },
+    "msg": "RET_FAIL",
+    "retcode": -1,
+    "ticket": "GM"
+}
