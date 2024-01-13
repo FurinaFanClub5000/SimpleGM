@@ -1,0 +1,239 @@
+Note:
+Put these commands to msg field in MuipTool
+<id> mean numeric value like 5 without < and > cgaracters
+(on|off) mean on OR off without “(“, “|”, “)” characters
+
+Commands:
+quest add|accept|finish <id?> -- Add/Accept/Finish Quest
+clear [pquest]
+finish [father(v2)] <id>
+finishv2 <id>
+fail [father] <id>
+random <clear|template> [id (if template)]
+cancel [father] <id>
+set_global <mainQuestId>? <val>
+set_timevar <mainQuestId> <val>
+state <id> <state>
+point <sceneid> <all|id> -- unlock waypoints
+avatar add <id> -- Add avatar
+avatar add 10000002 -- Add avatar Ayaka
+avatar change <id> -- needs already owned avatar
+wudi global (avatar|monster) (on|off) -- Infinite hp your avatar or monster
+break <level> -- promotelevel
+mail addconfig <id> [params]
+item add <id>
+kill self
+kill monster <id|all>
+monster <num|id> [id] [level]
+mcoin 999999 -- Crystal
+talent unlock all -- Talent
+point 3 all -- unlock all teleports
+energy infinite on / off -- Unlimited ele brust
+stamina infinite on / off -- Unlimited stamina
+item add id qty -- Send item
+quest accept 30904 -- Unlock Multiplayer
+quest accept 35801 -- Unlock Wish
+quest accept 35603 -- Unlock Fly
+player level 1 -- adventure level
+player level 60 max -- adventure level
+jump 1009 -- Teleports to scene_id, 1009=AngelShare, not all id_scene work
+equip add 15505 1 4 -- Item add
+monster 20010101 0 1 -- Monster spawn <id> <count> <level>
+kill monster 20010101 -- Monster kill
+kill monster all -- Kill all Monster
+equip add 13501 90 6 (item_id=13501 level=90 protomte_level=6) -- Add Weapons
+item add 223 10000 -- Item add, Intertwined Fate x10000
+item add 224 10000 -- Item add, Asquaint Fate x10000
+item add 102 555 -- Add Item, Adventure experience x555
+item add 103 555 -- Add Item, Masterless Stardust x555
+item add 104 555 -- Add Item, Masterless Starglitter x555
+item add 201 10000 -- Add Item, Primogems x10000
+item add 202 555 -- Add Item, Mora x555
+item add 203 555 -- Add Item, Genesis Crystall x555
+item add all -- Add all item + including all characters with level 1
+item clear 102 555 -- Remove item
+goto 1 1 1 -- x,y,z - in gc use /pos to see location
+dungeon <scenedId> -- Teleports to dungeon
+mcoin 10000 -- Add Genesis Crystal
+scoin 10000 -- Add ???
+hcoin 10000 -- Add Primogems
+home_coin 10000 -- add Realm currency (used to exchange for items in the Realm
+Depot through Tubby and the Traveling Depot through Chubby)
+submcoin 100 -- Sub Genesis Crystal
+subhcoin 100 -- Sub Primogems
+subscoin 100 -- Sub ???
+subhome_coin -- Sub Realm currency
+Unknown GM cheat commands
+=== climate ===
+cold
+lethal
+unlethal
+nolethal
+sbuff
+=== weather ===
+sun
+hot
+heat
+cloud
+rain
+thuner
+storm
+lightning
+snow
+freeze
+frost
+ice
+mist
+fog
+desert
+angle <axis_y> <axis_z> <angle> -- ???
+authority --
+host ??? -- change host
+buff ??? --
+addteam ??? --
+delteam ??? --
+pause ??? --
+move ??? --
+log ??? --
+login ??? --
+login reward clear ??? --
+region ??? --
+openstate ??? --
+reconnect ??? --
+event ??? --
+finish parent quest ??? --
+platform ??? --
+expedition ??? --
+data ??? --
+hadd ??? --
+callback ??? --
+takereward ??? --
+start ??? --
+resetall ??? --
+dungeonteam ??? --
+ready ??? --
+clearwtr ??? --
+mail ??? --
+addconfig ??? --
+mail adconfig ??? --
+getall ??? --
+update ??? --
+makedefine ??? --
+dataversion ??? --
+fetter ??? --
+fin
+conceal
+addexp
+clearall
+birth
+player_birth
+add_all_fetters
+open_all_fetters
+prop
+dailytask
+dailytask add <taskid> -- add task
+dailytask finish <taskid> -- del task
+addsure
+dailytask addsure <taskid>
+addpossible
+dailytask addpossible <task_id> <next_days>
+dailytask setvar <task_id> <index> <value>
+resetvar
+set_cycle_refresh
+dailytask set_cycle_refresh <task_id> <value>
+setweight
+dailytask setweight <task_id> <weight>
+removeweight
+dailytask removeweight (all or task_id)
+randtask
+randtask refresh <rand_task_id> <revise_level>
+trycreate
+randtask trycreate <rand_task_id>
+clear_cd
+world
+levellimit
+world level <num>
+clearcd
+adjustlevel
+directlevel
+robot_get_data
+combat_force
+allow
+mp allow <uid>
+giving
+gadget_giving
+active
+take_back
+get_list
+simulate_next_day
+simulate_get_log
+simulate_big_world_chest
+simulate_dungeon ???
+simulate_finish_one_dailytask
+simulate_finish_one_randtask
+simulate_expedition
+simulate_kill_monster
+simulate_add_player_time ???
+test_coverity
+simulate_interrupt_next_transfer
+get_gameserver_appid
+get_thread_index
+investigation
+quest_daily_notify
+nearentity
+print nearentity
+lockteam
+activity
+clear_banner
+get_all_meet_cond
+cond
+setcond
+setscore
+setscorelimit
+all_watcher_takeable
+select_avatar
+push_tips
+record
+set_state
+get_num
+michiae
+open_stage
+close_stage
+sealamp
+popularity
+sealamp popularity <value>
+reset_watcher
+active_watcher
+add_watcher_progress
+watcher_pushtips
+take_activity_watcher_reward
+test_trigger_watcher
+mp_kill_monster_num
+mp_kill_monster_num
+tower
+mid_ntf
+schedule
+set_to_newest
+windseed
+has_elemforce_wind
+add_signal
+battlepass
+recharge
+mpplay
+gadgetplay
+yace
+salesman
+forge_point
+show_avatar_born_time
+area_explore
+aster
+effigy
+reset_reward
+scene_tag <tagid>
+reputation
+hunting
+group_reload_press
+widget
+flight
+gallery
+monster_yace
