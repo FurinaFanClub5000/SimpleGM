@@ -1,5 +1,4 @@
 Note:
-Put these commands to msg field in MuipTool
 <id> mean numeric value like 5 without < and > cgaracters
 (on|off) mean on OR off without “(“, “|”, “)” characters
 
