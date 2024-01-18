@@ -16,5 +16,5 @@ Send GM commands without MUIP tool
 1. Clone repo
 2. Open CMD in the dir
 3. run `npm install`
-4. Configure ur config by manually editing the config.json file.
+4. Configure ur config by manually editing the config.json file or use config command.
 5. run start.bat
